@@ -26,4 +26,4 @@ function transformString(str) {
 // Test cases
 console.log(transformString("Hamburger")); // Output: "regrubmaH"
 console.log(transformString("Pizza")); // Output: "80 105 122 122 97"
-console.log(transformString("Chocolate Chip ")); // Output: "Chocolate Chip " (no transformation)
+console.log(transformString("Chocolate Chip       ")); // Output: "Chocolate Chip " (no transformation)

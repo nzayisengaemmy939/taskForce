@@ -21,6 +21,6 @@ function hasContiguousSubarrayWithSum(arr, target) {
 }
 
 // Example:
-const arr = [4, 2, 7, 1, 9, 5];
+const arr = [4, 2, 7, 10, 9, 5];
 const target = 17;
 console.log(hasContiguousSubarrayWithSum(arr, target));  // Output: true
