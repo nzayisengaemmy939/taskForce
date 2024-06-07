@@ -1,0 +1,222 @@
+/* about intro */
+
+
+* {
+    margin: 0;
+  }
+  body{
+    background-color: #020202;
+  }
+  .home-page {
+    width: 1280px;
+    height: 840px;
+    background-color: #b22222;
+    border-radius: 40px;
+    padding: 70px;
+    top: -487px;
+    left: -355px;
+    gap: 10px;
+  }
+  p {
+    font-family: Poppins;
+    font-size: 80px;
+    font-weight: 300;
+    line-height: 100px;
+    color: #ffffff;
+    gap: 30px;
+  }
+  .desktop {
+    width: 1140px;
+    height: 700px;
+    margin: auto;
+  }
+  /* about gallery01  */
+ 
+     .gallery {
+        width: 1178px;
+        height: 558px;
+        top: 608px;
+        left: -355px;
+        gap: 2px;
+        display: flex;
+        flex-direction: row;
+    /* border: 2px solid red; */
+    margin: auto;
+
+      }
+      .gallery .container{
+        /* border: 2px solid red; */
+        height: 588px;
+        
+      }
+      .gallery img {
+        width: 293px;
+        height: 588px;
+        transition: transform 0.8s, filter 0.8s opacity 0.8s ;
+      }
+    
+
+      .alt{
+        width: 213px;
+        height: 100px;
+        padding: 40px;
+        gap:8px;
+        /* border: 2px solid red; */
+        position: absolute;
+        top:380px;
+        transition: transform 0.8s ;
+        display: block;
+        /* justify-content:center; */
+        /* align-items: center; */
+      }
+      /* .gallery img:hover{
+        filter: grayscale(100%);
+      } */
+      .alt h3{
+        font-size: 38px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        line-height: 38px;
+        ;
+      }
+      .alt span{
+        font-family: Poppins,sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16.02px;      }
+        .alt  p{
+          font-family: Poppins,sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16.02px; 
+          color:  #048097;
+          display: none;
+          transition: display 0.8s;
+        }
+      /* about gallery03 */
+    
+     .gallery03 {
+        width: 400px;
+        height: 600px;
+        top: 1490px;
+        left: -355px;
+        gap: 2px;
+        display: flex;
+        /* border: 2px solid red; */
+        flex-direction: row;
+        margin: auto;
+        /* justify-content: center; */
+        /* align-content: center; */
+      }
+      .gallery03 img {
+        width: 98.5px;
+        height: 600px;
+      } 
+      .gallery03 img:hover{
+        opacity: 0.1;
+        translate: 4px;
+      }
+    .close{
+      color: red;
+      position: absolute;
+      font-size: 40px;
+      font-weight: bold;
+      top: -320px;
+      left: 270px;
+      /* display: none; */
+    }
+      @media screen and (max-width:600px) {
+        .home-page {
+            width: 1280px;
+            height: 840px;
+            background-color: #b22222;
+            border-radius: 40px;
+            padding: 70px;
+            top: -487px;
+            left: -355px;
+            gap: 10px;
+          }
+          p {
+            font-family: Poppins;
+            font-size: 80px;
+            font-weight: 300;
+            line-height: 100px;
+            color: #ffffff;
+            gap: 30px;
+          }
+          .desktop {
+            width: 1140px;
+            height: 700px;
+          }
+          /* about gallery01  */
+         
+             .gallery {
+                width: 100px;
+                height: 558px;
+                top: 608px;
+                left: -355px;
+                gap: 2px;
+                display: flex;
+                flex-direction: column
+              }
+              .gallery:hover{
+                transform: scale(1.1);
+              }
+              .gallery .container{
+                /* border: 2px solid red; */
+                height: 588px;
+                display: block;
+                width: 400px;
+                
+              }
+              .alt{
+                width: 213px;
+                height: 100px;
+                padding: 40px;
+                gap:8px;
+                /* border: 2px solid red; */
+                position: relative;
+                top:300px;
+                transition: transform 0.8s ;
+                display: block;
+                /* justify-content:center; */
+                /* align-items: center; */
+              }
+              .alt  p{
+                font-family: Poppins,sans-serif;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16.02px; 
+                color:  #048097;
+                display: none;
+                transition: display 0.8s;
+              }
+              .gallery img {
+                width: 293px;
+                height: 588px;
+              }
+              /* about gallery03 */
+            
+             .gallery03 {
+                width: 100%;
+                height: 600px;
+                top: 1490px;
+                left: -355px;
+                gap: 2px;
+                display: flex;
+                /* border: 2px solid red; */
+                flex-direction: column;
+                margin: auto;
+                /* justify-content: center; */
+                /* align-content: center; */
+              }
+              .gallery03 img {
+                width: 98.5px;
+                height: 600px;
+              } 
+              .gallery03 img:hover{
+                opacity: 0.1;
+                translate: 4px;
+              }
+      }

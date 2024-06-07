@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery01</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.1);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+<div class="gallery">
+    <div class="container">
+        <img src="images/4.png" />
+        <div class="alt">
+            <h3>fennec<br>fox<br><span>india</span></h3>
+            <p class="more">know-more-></p>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+    <div class="container">
+        <img src="images/3.png" />
+        <div class="alt">
+            <h3>humpback<br>whale<br><span>south africa</span></h3>
+            <p class="more">know-more-></p>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+    <div class="container">
+        <img src="images/2.png" />
+        <div class="alt">
+            <h3>common brown baboon<br><span>south africa</span></h3>
+            <p class="more">know-more-></p>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+    <div class="container">
+        <img src="images/1.png" />
+        <div class="alt">
+            <h3>spotted<br>deer<br><span>amazon</span></h3>
+            <p class="more">know-more-></p>
+            <span class="close">&times;</span>
+        </div>
+    </div>
+</div>
+<script>
+    const images = document.querySelectorAll("img");
+    const alts = document.querySelectorAll(".alt");
+
+    images.forEach((img) => {
+        img.addEventListener("click", function () {
+            // Hide all images
+            images.forEach((image) => {
+                image.style.display = "none";
+            });
+            // Show only the clicked image
+            img.style.display = "block";
+            img.style.width = ""; // Reset width
+        });
+    });
+
+    alts.forEach((alt) => {
+        const more = alt.querySelector('.more');
+        const closeButton = alt.querySelector('.close');
+
+        more.addEventListener("click", function () {
+            // Show only the image associated with this 'know-more' button
+            const img = alt.previousElementSibling;
+            img.style.display = "block";
+            img.style.width = "100%"; // Set width to 100% on "know more" click
+            img.style.transform = "scale(1)";
+            img.style.opacity = "1";
+        });
+
+        closeButton.addEventListener("click", function () {
+            // Show all images
+            images.forEach((image) => {
+                image.style.display = "block";
+            });
+            // Reset all image widths, opacity, and scale
+            images.forEach((image) => {
+                image.style.width = "";
+                image.style.opacity = "0.7";
+                image.style.transform = "scale(1.1)";
+            });
+        });
+    });
+</script>
+</body>
+</html>
